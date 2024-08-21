@@ -62,7 +62,7 @@ const AddTask = ({ boardId, userId, close, allCols }) => {
 							>
 								Priority:{' '}
 							</label>
-							<select name='priority' defaultValue='low' className='select'>
+							<select name='priority' defaultValue='low' className='select    rounded-lg'>
 								<option value='high' className='option'>
 									High
 								</option>
@@ -79,7 +79,7 @@ const AddTask = ({ boardId, userId, close, allCols }) => {
 							<label className='text-gray-500 block sm:inline' htmlFor='column'>
 								Select a column:{' '}
 							</label>
-							<select name='column' required className='select'>
+							<select name='column' required className='select   rounded-lg'>
 								{allCols.map(c => (
 									<option className='option' value={c} key={c}>
 										{c}
@@ -96,13 +96,13 @@ const AddTask = ({ boardId, userId, close, allCols }) => {
 					</label>
 					<textarea
 						name='desc'
-						className='border border-gray-300 w-full px-4 py-3 outline-none h-32'
+						className='border border-gray-300 w-full px-4 py-3 outline-none h-32 rounded-lg'
 						defaultValue={description}
 						onChange={e => setDescription(e.target.value)}
 					/>
 				</div>
 
-				<button className='bg-purple-500 text-white px-2 py-1 rounded-sm'>
+				<button className='bg-purple-500 text-white px-2 py-1 rounded-lg'>
 					Add Task
 				</button>
 			</form>
