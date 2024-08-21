@@ -1,6 +1,6 @@
 import { CheckedOutline } from "./Icons";
 
-const ChecklistProgress = ({ todos }) => {
+const CheckListProgress = ({ todos }) => {
   const tasksCompleted = todos.filter((todo) => todo.done === true);
 
   return (
@@ -18,4 +18,4 @@ const ChecklistProgress = ({ todos }) => {
   );
 };
 
-export default ChecklistProgress;
+export default CheckListProgress;
